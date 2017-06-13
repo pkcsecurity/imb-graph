@@ -1,0 +1,41 @@
+{
+  "name": "imb-graph",
+  "version": "1.0.0",
+  "description": "Graph analysis of IMB's email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/index.js || true",
+    "babel": "babel --watch=./src --out-dir=./build || true",
+    "lint": "./node_modules/.bin/eslint --color src/* || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pkcsecurity/imb-graph.git"
+  },
+  "keywords": [
+    "jerry",
+    "falwell",
+    "sentiment",
+    "analysis"
+  ],
+  "author": "PKC Security",
+  "bugs": {
+    "url": "https://github.com/pkcsecurity/imb-graph/issues"
+  },
+  "homepage": "https://github.com/pkcsecurity/imb-graph#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-plugin-transform-es2015-modules-commonjs": "*",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "eslint": "^3.6.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
+  },
+  "license": "CC-BY-NC-4.0",
+  "dependencies": {
+    "neo4j-driver": "*"
+  }
+}

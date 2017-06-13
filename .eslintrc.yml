@@ -1,0 +1,16 @@
+extends: airbnb
+plugins:
+  - import
+rules:
+  'linebreak-style': 0
+  'no-unused-vars':
+    - error
+    - argsIgnorePattern: '^_[0-9]*'
+  'max-len': off
+  'no-confusing-arrow': off
+  'no-bitwise':
+    - error
+    - int32Hint: true
+env:
+    node: true
+    mocha: true
